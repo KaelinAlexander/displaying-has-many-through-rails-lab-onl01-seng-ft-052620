@@ -3,3 +3,4 @@
 <%= @doctor.appointments.each do |appointment| %>
 <p>Time: <%= appointment.appointment_datetime.strftime("%m") %> <%= appointment.appointment_datetime.strftime("%e") %>, <%= appointment.appointment_datetime.strftime("%Y") %> at <%= appointment.appointment_datetime.strftime("%H") %>:<%= appointment.appointment_datetime.strftime("%M") %><br>
   Patient: <%= appointment.patient %>
+  <br>
