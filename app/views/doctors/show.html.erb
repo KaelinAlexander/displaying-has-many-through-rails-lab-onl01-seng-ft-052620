@@ -1,4 +1,4 @@
 <h1><%= @doctor.name %></h1>
 <h3>Department: <%= @doctor.department %></h3>
 <%= @doctor.appointments.each do |appointment| %>
-<h4>Time: <%= appointment.appointment_datetime.strftime("%m") %> <%= appointment.appointment_datetime.strftime("%e") %>, <%= appointment.appointment_datetime.strftime("%Y") %>
+<h4>Time: <%= appointment.appointment_datetime.strftime("%m") %> <%= appointment.appointment_datetime.strftime("%e") %>, <%= appointment.appointment_datetime.strftime("%Y") %> at <%= appointment.appointment_datetime.strftime("%H") %>:<%= appointment.appointment_datetime.strftime("%M") %>
